@@ -18,12 +18,14 @@
 #   limitations under the License.
 #########################################################################
 
-VERSION = "0.1.2"
-CFG_FILENAME = "hostsgen.yml"
-MOD_FILENAME = "mod.txt"
-HEAD_FILENAME = "head.txt"
+VERSION = "0.1.3"
+CFG_FILENAME = ENV["HOSTSGEN_CFG"] || "hostsgen.yml"
+MOD_FILENAME = ENV["HOSTSGEN_MOD"] || "mod.txt"
+HEAD_FILENAME = ENV['HOSTSGEN_HEAD'] || "head.txt"
+OUTPUT_EVAL = ENV['HOSTSGEN_EVAL'] || "@loc + ' ' + @host"
+
 # valid hostname may contain ASCII char A-Z, a-z, 0-9 and '.', '-'.
-HOSTNAME_VALID_CHARS = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890-."
+HOSTNAME_VALID_CHARS = ENV['HOSTSGEN_VALID_CHARS'] || "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890-."
 
 # main function
 def start(args)
@@ -96,7 +98,7 @@ def start(args)
   mods = ProjectModules.new(options.silent, project_cfg.mods, options.mod_black_list)
   print "[COMPILE] Modules: "
   puts mods.mods.to_s
-  # if String|nil ...
+  # if String|nil then ...
   if name=options.out then
     mods.build options.silent, options.no_comments, name, project_cfg
   else
@@ -132,7 +134,6 @@ class CmdlineOptions
       else 0
     end
   end
-  #getter
   attr_reader :mod_black_list
   attr_reader :operate
   attr_reader :silent
@@ -159,7 +160,6 @@ class ProjectConfig
     @authors = cfg["authors"]
     @mods = cfg["mods"]
   end
-  #getter
   attr_reader :name
   attr_reader :desc
   attr_reader :out
@@ -199,13 +199,14 @@ class ProjectModules
     begin
       file.puts (File.open HEAD_FILENAME).read + "\n"
     rescue
-      puts "[WARN] Head text not found(head.txt)"
+      puts "[WARN] Head text not found: " + HEAD_FILENAME
     end
     begin
       (file.puts "#Hostsgen project " + cfg.name + " (" + cfg.desc + ") " + "by " + cfg.authors.to_s + "\n") if not ARGV.include? "-t"
     rescue
       puts "[WARN] Cannot put project props"
     end
+    file.puts "#Modules: " + @descs.to_s + "\n"
     @mods.each_with_index do |m, i|
       puts "[COMPILE] Compiling Module #" + i.to_s + ": " + m if not quiet
       if File.exist? m + '/' + MOD_FILENAME then
@@ -213,8 +214,8 @@ class ProjectModules
         HostsModule.new(f.read).compile m, file, @descs[i]
       else puts "[ERR] Cannot find module config"; exit 5 end
     end
+    file.puts "#End modified hosts" + "\n"
   end
-  #getter
   attr_reader :mods
 end
 
@@ -300,9 +301,9 @@ class GenerateRule
     @host_insert_idx = @host.index "{HOST}"
     @host = @host.tr "{HOST}", "" #blank String is nil in Ruby
     @loc_insert_idx = @loc.index "{IP}"
-    @loc = @loc.tr "{IP}", "" 
+    @loc = @loc.tr "{IP}", ""
     @put_in_host = nil
-    if a=@host_insert_idx.nil? or @loc_insert_idx.nil? then
+    if a = @host_insert_idx.nil? or @loc_insert_idx.nil? then
       @put_in_host = !a
       raise "must be one format argument valid ({IP} {HOST}) at least" if a and @loc_insert_idx.nil?
     end
@@ -340,7 +341,7 @@ class Hosts
     @logs = []
   end
   # parse a String, store data in self
-  # valid log should not be started with #
+  # valid log should not be started with '#'
   def parse(hosts)
     hosts.lines.each_with_index do |l, i|
       l = l.strip
@@ -379,14 +380,11 @@ class HostsItem
     @loc = loc #address
   end
   def to_s()
-    #if @loc.nil? or @host.nil? then return @loc.to_s||@host.to_s end 
-    return @loc + ' ' + @host
+    return eval OUTPUT_EVAL
   end
-  #getter
   attr_reader :line
   attr_reader :host
   attr_reader :loc
-  #setter
   def set(h,i,l)
     @line = l
     @host = h
@@ -412,4 +410,5 @@ def lint(logs)
 end
 
 
+# invokes main function if this script is running not as a library
 if $0 == __FILE__ then start(ARGV) end
