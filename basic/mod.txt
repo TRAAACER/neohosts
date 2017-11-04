@@ -5,3 +5,8 @@ g-ad.txt:(Google ADs屏蔽) 0.0.0.0 {HOST}
 miui.txt:(米釉专属屏蔽) 0.0.0.0 {HOST}
 qq.txt:(QQ广告， 流氓服务屏蔽) 0.0.0.0 {HOST}
 weibo.txt:(微博流氓广告服务屏蔽) 0.0.0.0 {HOST}
+360.txt:(360流氓屏蔽) 0.0.0.0 {HOST}
+adobe.txt:(adobe验证服务器屏蔽) 0.0.0.0 {HOST}
+ali.txt:(部分淘宝流氓, cdn屏蔽) 0.0.0.0 {HOST}
+netease.txt:(网易广告屏蔽) 0.0.0.0 {HOST}
+youdao.txt:(有道广告屏蔽) 0.0.0.0 {HOST}

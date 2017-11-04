@@ -9,3 +9,5 @@ dualstack.adsame-1421766300.ap-southeast-1.elb.amazonaws.com
 srv.carbonads.net
 assets.servedby-buysellads.com
 carbonads.net
+xf.yellowto.com
+yellowto.com

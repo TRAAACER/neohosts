@@ -20,3 +20,10 @@ js.t.sinajs.cn
 js2.t.sinajs.cn
 js1.t.sinajs.cn
 click.uve.weibo.com
+analytics.live.com
+digg.analytics.live.com
+analytics.msn.com
+analytics.r.msn.com
+ms.analytics.live.com
+stat.360safe.com
+stat.m.360.cn
