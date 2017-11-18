@@ -6,8 +6,9 @@
 
 <p align="center">
 <img alt="Author" src="https://img.shields.io/badge/Author-Neko%20Dev%20Team%20&%20neoHosts%20Team-blue.svg?style=flat-square"/>
-<a href="https://travis-ci.org/neko-dev/neohosts"><img alt="Build Status" src="https://img.shields.io/travis/pigfromChina/neohosts.svg?style=flat-square"/></a>
+<a href="https://travis-ci.org/pigfromchina/neohosts"><img alt="Build Status" src="https://img.shields.io/travis/pigfromChina/neohosts.svg?style=flat-square"/></a>
 <a href="https://github.com/viosey/hexo-theme-material/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Hosts%20License%20&%20SATA-757575.svg?style=flat-square"/></a>
+<img alt="Powered-with" src="https://img.shields.io/badge/powered-hostsgen-ee5566.svg?style=flat-square"/>
 </p>
 
 ## Introduction 介绍
@@ -51,6 +52,7 @@ Authored and maintained by [neoFelhz](https://github.com/neoFelhz) with `Neko De
 
 - [neoFelhz's Blog](https://blog.nfz.moe) - The main maintainer's blog.
 - [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) - A project which provide ACL for SSR, include gfwlist and ban AD.
+- [neoHosts NekoDev](https://github.com/neko-dev/neohosts) - origin repo.
 
 ## License 许可证
 
@@ -146,18 +148,23 @@ add address=::1 name=ip6-loopback
 >Select one, Write to a file.
 
 2. set Environment vars
-`$export HOSTSGEN_HEAD="{your_head_file(full path)}"`
 
-__dnsmasq.conf: __
+`export HOSTSGEN_HEAD="{your_head_file(full path)}"`
+
+__dnsmasq.conf:__
+
 `export HOSTSGEN_EVAL="'address=/' + @host + '/' + @loc"`
 
-__surge.conf: __
+__surge.conf:__
+
 `export HOSTSGEN_EVAL="@host + ' = ' + @loc"`
 
-__hosts.rsc: __
+__hosts.rsc:__
+
 `export HOSTSGEN_EVAL="'add address=' + @loc + ' name=' + @host"`
 
 3. generate all files (ignore lint errors)
-`$cd _build&&./build.sh`
 
-__Find build artifacts in _build/data_temp__
+`cd _build&&./build.sh`
+
+__Find build artifacts in \_build/data_temp__
