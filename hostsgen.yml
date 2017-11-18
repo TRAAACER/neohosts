@@ -4,9 +4,16 @@ authors: NekoDev Team&neoHosts Team
 out: nadhost
 
 mods:
+  - basic 基础hosts
   - analytics 统计系统屏蔽
   - anti_china 反华势力网站屏蔽
-  - basic 基础hosts， 包含360， 百度等广告过滤
   - hijack 防下载， CNNIC根证书劫持的hosts
+  - baidu_location_report 百度全家桶定位 API
   - miners 反JavaScript挖矿的hosts
-  - qihoo_baidu 反奇虎百度流氓软件的hosts
+  - Ads/qihoo_baidu 反奇虎百度流氓软件的hosts
+  - Ads/miui MIUI Ads
+  - Ads/os_ads 部分操作系统内置广告
+  - Ads/google Google ADs 屏蔽
+  - Ads/netease Netease 广告屏蔽
+  - Ads/blockDL BAT 部分“安全”软件下载
+  - Ads/adobe Adobe 广告
