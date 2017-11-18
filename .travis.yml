@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+  - 2.2
+  - jruby
+  - 2.0.0-p247
+dist: trusty
+script:
+  - chmod +x ./_build/deploy.sh
+  - chmod +x ./_build/build.sh
+  - ./_build/build.sh
+  - ./_build/deploy.sh > /dev/null
