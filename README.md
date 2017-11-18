@@ -64,3 +64,100 @@ Authored and maintained by [neoFelhz](https://github.com/neoFelhz) with `Neko De
 本项目分发的所有 Hosts 和数据源，除另有说明外，均基于上述介绍的协议发布，具体请看分支下的 [`LICENSE`](https://github.com/neko-dev/neohosts/blob/data/LICENSE)。
 
 此处的文字仅用于说明，条款以 [`LICENSE`](https://github.com/neko-dev/neohosts/blob/data/LICENSE) 文件中的内容为准。
+
+## NeoHosts -- GenHosts fork Resources
++ [Allow BadSoft Download](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/allow_badsoft_dl)
++ [Allow Analytics](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/analyze_me)
++ [Full](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/full)
++ [NO OS(Flyme, MIUI..) ADs block](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/i_love_os_ads)
++ [Allow Sina ADs](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/i_love_sina)
++ [Allow Miners](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/mine_me)
++ [Allow adobe](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/prise_adobe)
++ [Allow some good maf](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/prise_good)
++ [Allow G-ADs](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/prise_google)
++ [Allow microsoft](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/prise_ms)
++ [Allow netease](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/prise_netease)
++ [Allow Baidu track](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/track_me)
++ [Allow MI ADs](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/real_mi_fans)
+
+### Generate dnsmasq.conf, surge.conf, hosts.rsc HOW-TO
+
+1. Prepare file head
++ dnsmasq.conf
+```
+# Copyright (c) 2014-2017, {NAME}.
+# https://github.com/{REPO}
+# Last updated: ...
+
+# {LICENSE}
+
+# Modified Hosts Start
+
+# Localhost (DO NOT REMOVE) Start
+address=/localhost/127.0.0.1
+address=/localhost/::1
+address=/ip6-localhost/::1
+address=/ip6-loopback/::1
+# Localhost (DO NOT REMOVE) End
+
+```
+
++ surge.conf
+```
+[Host]
+
+# Copyright (c) 2014-2017, {NAME}.
+# https://github.com/{REPO}
+# Last updated: ...
+
+# {LICENSE}
+
+# Modified Hosts Start
+
+# Localhost (DO NOT REMOVE) Start
+localhost = 127.0.0.1
+localhost = ::1
+ip6-localhost = ::1
+ip6-loopback = ::1
+# Localhost (DO NOT REMOVE) End
+
+```
+
++ rsc
+```
+/ip dns static
+
+# Copyright (c) 2014-2017, {NAME}.
+# https://github.com/{REPO}
+# Last updated: ...
+
+# {LICENSE}
+
+# Modified Hosts Start
+
+# Localhost (DO NOT REMOVE) Start
+add address=127.0.0.1 name=localhost
+add address=::1 name=localhost
+add address=::1 name=ip6-localhost
+add address=::1 name=ip6-loopback
+# Localhost (DO NOT REMOVE) End
+
+```
+>Select one, Write to a file.
+
+2. set Environment vars
+`$export HOSTSGEN_HEAD="{your_head_file(full path)}"`
+
+__dnsmasq.conf: __
+`export HOSTSGEN_EVAL="'address=/' + @host + '/' + @loc"`
+
+__surge.conf: __
+`export HOSTSGEN_EVAL="@host + ' = ' + @loc"`
+
+__hosts.rsc: __
+`export HOSTSGEN_EVAL="'add address=' + @loc + ' name=' + @host"`
+
+3. generate all files (ignore lint errors)
+`$cd _build&&./build.sh`
+
+__Find build artifacts in _build/data_temp__
