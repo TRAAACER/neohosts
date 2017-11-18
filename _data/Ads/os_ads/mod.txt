@@ -1,0 +1,5 @@
+ColorOS.txt:(Color OS Ads) 0.0.0.0 {HOST}
+Flyme.txt:(Flyme OS Ads) 0.0.0.0 {HOST}
+JingLi.txt:(JingLi Ads) 0.0.0.0 {HOST}
+YunOS.txt:(Baidu OS Ads) 0.0.0.0 {HOST}
+Lenovo.txt:(Lenovo Ads) 0.0.0.0 {HOST}

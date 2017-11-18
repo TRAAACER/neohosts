@@ -1,0 +1,18 @@
+# Flyme
+api-flow.flyme.cn
+bro.flyme.cn
+t-e.flyme.cn
+t-flow.flyme.cn
+cal.meizu.com
+aries.mzres.com
+ebook.res.meizu.com
+umid.orion.meizu.com
+uxip.meizu.com
+api-push.meizu.com
+push.res.meizu.com
+upush.res.meizu.com
+openapi-news.meizu.com
+infocenter.meizu.com
+tongji-res1.meizu.com
+tongji.meizu.com
+aider-res.meizu.com

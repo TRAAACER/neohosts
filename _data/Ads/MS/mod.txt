@@ -1,0 +1,1 @@
+microsoft.txt:(微软广告) 0.0.0.0 {HOST}

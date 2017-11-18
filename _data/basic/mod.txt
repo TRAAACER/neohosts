@@ -1,0 +1,12 @@
+ali.txt:(部分阿里广告) 0.0.0.0 {HOST}
+common.txt:(其它常见广告) 0.0.0.0 {HOST}
+ifeng.txt:(凤凰网广告) 0.0.0.0 {HOST}
+kingsoft.txt:(金山有关广告) 0.0.0.0 {HOST}
+kugou.txt:(酷狗音乐广告) 0.0.0.0 {HOST}
+qq.txt:(QQ 广告) 0.0.0.0 {HOST}
+sogo.txt:(搜狗广告) 0.0.0.0 {HOST}
+uc.txt:(UC 广告) 0.0.0.0 {HOST}
+xunlei.txt:(迅雷广告) 0.0.0.0 {HOST}
+youdao.txt:(有道广告) 0.0.0.0 {HOST}
+2345.txt:(2345 下载劫持和推广) 0.0.0.0 {HOST}
+cnzz.txt:(CNZZ 广告和访问统计) 0.0.0.0 {HOST}

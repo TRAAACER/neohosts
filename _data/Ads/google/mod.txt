@@ -1,0 +1,1 @@
+g-ad.txt:(Google 广告) 0.0.0.0 {HOST}

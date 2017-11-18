@@ -1,0 +1,12 @@
+api.iapps.ifeng.com
+api.newad.ifeng.com
+exp.3g.ifeng.com
+iis1.deliver.ifeng.com
+iis3g.deliver.ifeng.com
+mfp.deliver.ifeng.com
+stadig.ifeng.com
+stadig0.ifeng.com
+c0.ifengimg.com
+c1.ifengimg.com
+js.51taifu.com
+wl.51taifu.com

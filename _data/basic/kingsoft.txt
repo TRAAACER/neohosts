@@ -1,0 +1,36 @@
+#ijinshan
+andmlbf.tj.ijinshan.com
+apns.ios.ijinshan.com
+bp.mobad.ijinshan.com
+mlb.did.ijinshan.com
+sdk.mobad.ijinshan.com
+unconf.mobad.ijinshan.com
+cdnimg.liehu.ijinshan.com
+d.union.ijinshan.com
+dl.union.ijinshan.com
+js.stat.ijinshan.com
+pop.sjk.ijinshan.com
+rcmd.pop.ijinshan.com
+rcv.mobad.ijinshan.com
+# Liebao
+an.m.liebao.cn
+cms.an.m.liebao.cn
+cr.m.liebao.cn
+j.wan.liebao.cn
+# Others
+ms.cmcm.com
+pegasus.cmcm.com
+cmcdl.cmcm.com
+dl.cm.ksmobile.com
+up.cm.ksmobile.com
+1.wps.cn
+android-lrcresource.wps.cn
+img1.pcfg.cache.wps.cn
+minfo.wps.cn
+moupdate10332052.wps.cn
+pcfg.wps.cn
+counter.kingsoft.com
+event.ksosoft.com
+uid.ksosoft.com
+ups.ksmobile.net
+ws.ksmobile.net

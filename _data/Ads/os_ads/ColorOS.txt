@@ -1,0 +1,17 @@
+# ColorOS
+adsfs.oppomobile.com
+adx.ads.oppomobile.com
+bdapi.ads.oppomobile.com
+data.ads.oppomobile.com
+httpdns.push.oppomobile.com
+i.flow.browser.oppomobile.com
+imagzine.oppomobile.com
+fs.uc.nearme.com.cn
+i.stat.nearme.com.cn
+kv.stat.nearme.com.cn
+stat.browser.nearme.com.cn
+oppo.yidianzixun.com
+i1.go2yd.com
+rl.go2yd.com
+s.go2yd.com
+web-track.go2yd.com

@@ -1,0 +1,313 @@
+# Disqus
+links.services.disqus.com
+ads.servebom.com
+ibn.adnxs.com
+referrer.disqus.com
+disqusads.com
+# Amazon
+dualstack.adsame-1421766300.ap-southeast-1.elb.amazonaws.com
+c.amazon-adsystem.com
+aax-cpm.amazon-adsystem.com
+# CarbonAD
+srv.carbonads.net
+assets.servedby-buysellads.com
+carbonads.net
+xf.yellowto.com
+yellowto.com
+# Adobe
+activate.adobe.com
+ereg.adobe.com
+na1r.services.adobe.com
+na2m-pr.licenses.adobe.com
+hlrcv.stage.adobe.com
+lm.licenses.adobe.com
+lmlicenses.wip4.adobe.com
+hlrcv.stage.adobe.com
+3dns-2.adobe.com
+3dns-3.adobe.com
+activate-sea.adobe.com
+activate-sjc0.adobe.com
+adobe-dns.adobe.com
+adobe-dns-2.adobe.com
+adobe-dns-3.adobe.com
+ereg.adobe.com
+hl2rcv.adobe.com
+practivate.adobe.com
+wip3.adobe.com
+activate.wip3.adobe.com
+ereg.wip3.adobe.com
+wwis-dubc1-vip60.adobe.com
+# malwarebytes
+keystone.mwbsys.com
+# Deviantart
+adcast.deviantart.com
+adimg.deviantart.net
+# HiNet
+p8u.hinet.net
+vatrack.hinet.net
+adasad.myweb.hinet.net
+blogad01.myweb.hinet.net
+blogad02.myweb.hinet.net
+# yahoo
+ads.yahoo.com
+ai.yimg.jp
+ads.yimg.com
+ard.yahoo.co.jp
+bc.geocities.yahoo.co.jp
+rd.ane.yahoo.co.jp
+ad.wretch.cc
+cm.p4p.cn.yahoo.com
+aliunion.cn.yahoo.com
+# SINA
+ad1.sina.com.cn
+ad2.sina.com.cn
+ad3.sina.com.cn
+ad4.sina.com.cn
+ad5.sina.com.cn
+# Bitcomet
+inside.bitcomet.com
+# Gomlab
+info.gomlab.com
+playinfo.gomlab.com
+promotion.gomlab.com
+# Globalplayer
+adimg.daumcdn.net
+analytics.ad.daum.net
+display.ad.daum.net
+# Winrar
+ad.winrar.com.cn
+# xiguavideo
+adv2.downsave.com
+info.downsave.com
+# jjvideo
+mini.jijiplayer.com
+txtad.jijiplayer.com
+# KUWO
+webstat.kuwo.cn
+api.iimedia.cn
+g.haluoha.com
+# OpenX
+us-u.openx.net
+www.openx.net
+coed-d.openx.net
+pmc-d.openx.net
+tmn-d.openx.net
+# Spotify
+adeventtracker.spotify.com
+analytics.spotify.com
+log.spotify.com
+spclient.wg.spotify.com
+# YinyueTai
+client.stats.yinyuetai.com
+log.collect.yinyuetai.com
+shop.admin.yinyuetai.com
+shop.yinyuetai.com
+statisticsv2.yinyuetai.com
+t.collect.yinyuetai.com
+col.hztags.net
+# Meitu
+adui.tg.meitu.com
+rabbit.tg.meitu.com
+meitubeauty.meitudata.com
+dc.meitustat.com
+mdc.meitustat.com
+rabbit.meitustat.com
+rabbit.mtadvert.com
+# jinritoutiao
+ad.toutiao.com
+temai.snssdk.com
+analytics.snssdk.com
+pb3.pstatp.com
+# Qidian
+a.game.qidian.com
+cj.qidian.com
+dwtrack.qidian.com
+o.if.qidian.com
+tongji.qidian.com
+uedas.qidian.com
+uedas.qdmm.com
+s1.cmfu.com
+# Opera
+c.bxb.oupeng.com
+r.bxb.oupeng.com
+ezine.oupeng.com
+img-ad.oupeng.com
+startup.oupeng.com
+notify.oupeng.com
+# Zhangyue
+am.g.ireader.com
+img.ad.zhangyue.com
+m.ad.zhangyue.com
+push.zhangyue.com
+sys.zhangyue.com
+# Holalauncher
+h5.holalauncher.com
+i.holalauncher.com
+st.holalauncher.com
+dh.holaworld.cn
+dr.holaworld.cn
+st.holaworld.cn
+sta.haloall.com
+a.holagames.com
+sta.holagames.com
+i.haloapps.com
+mo.test.haloapps.com
+mo.haloapps.cn
+# CNTV
+mdrecv.app.cntvwb.cn
+sdapprecv.app.cntvwb.cn
+vdapprecv.app.cntvwb.cn
+cws-cctv.conviva.com
+galaxy.bjcathay.com
+rtas.videocc.net
+# Maxthon Browser
+mad.m.maxthon.cn
+# XDA
+adserver.xpanama.net
+nop.xpanama.net
+d5nxst8fruw4z.cloudfront.net
+d36eyd5j1kt1m6.cloudfront.net
+# Anzhi
+fd.anzhi.com
+pv.anzhi.com
+# Renren
+click.jebe.renren.com
+cupid.jebe.renren.com
+shaft.jebe.renren.com
+jebe.renren.com
+jebe.xnimg.cn
+# Moji Weather
+ad.api.moji.com
+adlaunch.moji.com
+fds.api.moji.com
+stat.moji.com
+v1.log.moji.com
+cdn2.moji002.com
+# Others
+ad1.udn.com
+ad2.udn.com
+ad3.udn.com
+ad4.udn.com
+ad2.yam.com
+admd.yam.com
+ads.yam.com
+analytics.yam.com
+yam.adsbro.com
+liveupdate.mac.sandai.net
+ss.missyouxi.com
+ad.zuimeitianqi.com
+stat.zuimeitianqi.com
+ad.caiyunapp.com
+dualstack.adsame-1421766300.ap-southeast-1.elb.amazonaws.com
+tuiguang.meitu.com
+mpb2.iteye.com
+media.trafficfactory.biz
+dfc1.benbaisteel.com
+hyfh.benbaisteel.com
+coro.benbaisteel.com
+a.epinv.com
+b.epinv.com
+stats.chinaz.com
+c1.adform.net
+cas.pxl.ace.advertising.com
+match.adsrvr.org
+c1.popads.net
+serve.popads.net
+cdn.adsk2.co
+cdn.adstract.com
+js123.0937jyg.com
+js132.dupinpu.com
+js735.dupinpu.com
+js739.scfatao.com
+js74.0937jyg.com
+js74.fate-xy.com
+js8108.lxqcgj.com
+js883.chengzhao95511.com
+js257.0937jyg.com
+js3555.alitianxia168.com
+js3555.rencai56.com
+js3743.dgxinhuan.com
+js3987.vdhufs.com
+js4104.lygshgj.com
+js4104.scfatao.com
+js412.hot-eam.com
+js412.nbhxgjz.com
+js412.wangdaizao.com
+js4941.gaoxiaocup.com
+js5515.bjtrld.com
+js5515.guangzizai.com
+js883.dragoncent.com
+js883.free-rc.com
+js883.guangzizai.com
+js883.wywsdx.com
+js89.dalianhengtai.com
+js89.shanglinli.com
+js897.hot-eam.com
+js8108.lxqcgj.com
+js883.chengzhao95511.com
+js883.dragoncent.com
+js3555.alitianxia168.com
+js897.hot-eam.com
+js993.dugbvb.com
+js883.free-rc.com
+js883.guangzizai.com
+js883.wywsdx.com
+js89.dalianhengtai.com
+js89.shanglinli.com
+js993.dugbvb.com
+js123.0937jyg.com
+js132.dupinpu.com
+js7129.shxqeps.com
+js7152.shxqeps.com
+js735.dupinpu.com
+js1516.0937jyg.com
+js1517.0937jyg.com
+js152.cnpinzhuo.com
+js1597.txjzjx.cn
+js1810.dupinpu.com
+js1811.dupinpu.com
+js205.dupinpu.com
+js651.dupinpu.com
+js658.ltcprtc.com
+js6882.gdskywings.com
+js7022.gdskywings.com
+js7022.panzuoLuo.com
+js7129.shxqeps.com
+js7152.shxqeps.com
+js739.scfatao.com
+js74.0937jyg.com
+js74.fate-xy.com
+js1810.dupinpu.com
+js1811.dupinpu.com
+js205.dupinpu.com
+js257.0937jyg.com
+js1516.0937jyg.com
+js1517.0937jyg.com
+js152.cnpinzhuo.com
+js1597.txjzjx.cn
+js3555.rencai56.com
+js3743.dgxinhuan.com
+js3987.vdhufs.com
+js4104.lygshgj.com
+js4104.scfatao.com
+js412.hot-eam.com
+js412.nbhxgjz.com
+js412.wangdaizao.com
+js4941.gaoxiaocup.com
+js5515.bjtrld.com
+js5515.guangzizai.com
+js651.dupinpu.com
+js658.ltcprtc.com
+js6882.gdskywings.com
+js7022.gdskywings.com
+js7022.panzuoLuo.com
+ib.adnxs.co
+adsco.re
+sdksitter.m.sjzhushou.com
+pat.farvd.com
+ads.waps.cn
+app.wapx.cn
+ads.wapx.cn
+app.waps.cn
+openapi.guanjia.qq.com
+discuz.gtimg.cn

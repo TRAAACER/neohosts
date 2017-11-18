@@ -1,0 +1,18 @@
+# Sogou_Pinyin
+info.pinyin.sogou.com
+ping.pinyin.sogou.com
+# Broswer
+config.push.sogou.com
+download.zhushou.sogou.com
+pull.push.sogou.com
+bazinga.mse.sogou.com
+feed.theta.sogou.com
+# Others
+123.sogou.com
+brand.sogou.com
+get.sogou.com
+inte.sogou.com
+pb.sogou.com
+wan.sogou.com
+img.shouji.sogou.com
+input.shouji.sogou.com

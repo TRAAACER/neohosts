@@ -1,0 +1,5 @@
+analytics.live.com
+digg.analytics.live.com
+analytics.msn.com
+analytics.r.msn.com
+ms.analytics.live.com
