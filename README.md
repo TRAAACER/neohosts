@@ -9,9 +9,9 @@
 <img alt="Author" src="https://img.shields.io/badge/Author-Neko%20Dev%20Team%20&%20neoHosts%20Team-blue.svg?style=flat-square"/>
   </a>
 <a href="https://travis-ci.org/pigfromChina/neohosts"><img alt="Build Status" src="https://img.shields.io/travis/pigfromChina/neohosts.svg?style=flat-square"/></a>
-<a href="https://github.com/neko-dev/neohosts#license-%E8%AE%B8%E5%8F%AF%E8%AF%81"><img alt="License" src="https://img.shields.io/badge/License-Hosts%20License%20&%20SATA-757575.svg?style=flat-square"/></a>
 <a href="https://github.com/pigfromChina/neohosts#neohosts----genhosts-fork-resources">
 <img alt="Powered-with" src="https://img.shields.io/badge/powered-hostsgen-ee5566.svg?style=flat-square"/></a>
+<a href="https://github.com/neko-dev/neohosts/blob/data/LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Hosts%20License%20&%20SATA-757575.svg?style=flat-square"/></a>
 </p>
 
 ## Introduction 介绍
