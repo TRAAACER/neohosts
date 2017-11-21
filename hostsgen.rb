@@ -18,11 +18,23 @@
 #   limitations under the License.
 #########################################################################
 
-VERSION = "0.1.3"
+VERSION = "0.1.4"
 CFG_FILENAME = ENV["HOSTSGEN_CFG"] || "hostsgen.yml"
 MOD_FILENAME = ENV["HOSTSGEN_MOD"] || "mod.txt"
 HEAD_FILENAME = ENV['HOSTSGEN_HEAD'] || "head.txt"
 OUTPUT_EVAL = ENV['HOSTSGEN_EVAL'] || "@loc + ' ' + @host"
+
+if ARGV.include? "-Wall" then
+  LINT_NODOMAIN = true
+  LINT_DUP = true
+  LINT_DUAL_DOT = true
+  LINT_LOOKUP = true
+else
+  LINT_NODOMAIN = ARGV.include? "-Wno_domain"
+  LINT_DUP = ARGV.include? "-Wdup"
+  LINT_DUAL_DOT = ARGV.include? "-Wdual_dot"
+  LINT_LOOKUP = ARGV.include? "-Wlookup"
+end
 
 # valid hostname may contain ASCII char A-Z, a-z, 0-9 and '.', '-'.
 HOSTNAME_VALID_CHARS = ENV['HOSTSGEN_VALID_CHARS'] || "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890-."
@@ -415,6 +427,8 @@ end
 # name.assert_only_include HOSTNAME_VALID_CHARS
 def lint(logs)
   require 'ipaddr'
+  seen_hostname = []
+  seen_location = []
   logs.each_with_index do |l, i|
     hostname_not_valid = false
     puts "[LINT] WARN: log #" + i.to_s + " may not have a valid IP Address (" + l.loc + ")" if !(IPAddr.new(l.loc) rescue false)
@@ -422,6 +436,12 @@ def lint(logs)
       if not HOSTNAME_VALID_CHARS.include? c then hostname_not_valid = true; cha = c end
     end
     puts "[LINT] WARN: log #" + i.to_s + " may not have a valid hostname (invalid char '" + cha + "')" if hostname_not_valid
+
+    #DUAL_DOT
+    puts "[LINT} WARN: dual dot at line " + i.to_s + ": " + l.host if l.host.include? ".."
+    #NODOMAIN
+    #DUP
+    #LOOKUP
   end
 end
 
