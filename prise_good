@@ -185,6 +185,13 @@
 0.0.0.0 nop.xpanama.net
 0.0.0.0 d5nxst8fruw4z.cloudfront.net
 0.0.0.0 d36eyd5j1kt1m6.cloudfront.net
+0.0.0.0 d1grtyyel8f1mh.cloudfront.net
+0.0.0.0 ad.turn.com
+0.0.0.0 match.adsrvr.org
+0.0.0.0 track.eyeviewads.com
+0.0.0.0 pixel.tapad.com
+0.0.0.0 pixel.adsafeprotected.com
+0.0.0.0 p.adsymptotic.com
 0.0.0.0 fd.anzhi.com
 0.0.0.0 pv.anzhi.com
 0.0.0.0 click.jebe.renren.com
@@ -198,6 +205,13 @@
 0.0.0.0 stat.moji.com
 0.0.0.0 v1.log.moji.com
 0.0.0.0 cdn2.moji002.com
+0.0.0.0 adnet.sohu.com
+0.0.0.0 pub.pxl.ace.advertising.com
+0.0.0.0 pixel.advertising.com
+0.0.0.0 fw.adsafeprotected.com
+0.0.0.0 adserver-us.adtech.advertising.com
+0.0.0.0 geo.moatads.com
+0.0.0.0 px.moatads.com
 0.0.0.0 ad1.udn.com
 0.0.0.0 ad2.udn.com
 0.0.0.0 ad3.udn.com
@@ -224,7 +238,6 @@
 0.0.0.0 stats.chinaz.com
 0.0.0.0 c1.adform.net
 0.0.0.0 cas.pxl.ace.advertising.com
-0.0.0.0 match.adsrvr.org
 0.0.0.0 c1.popads.net
 0.0.0.0 serve.popads.net
 0.0.0.0 cdn.adsk2.co
@@ -313,8 +326,7 @@
 0.0.0.0 js651.dupinpu.com
 0.0.0.0 js658.ltcprtc.com
 0.0.0.0 js6882.gdskywings.com
-0.0.0.0 js7022.gdskywings.com
-0.0.0.0 js7022.panzuoLuo.com
+0.0.0.0 js7022.panzuoluo.com
 0.0.0.0 ib.adnxs.co
 0.0.0.0 adsco.re
 0.0.0.0 sdksitter.m.sjzhushou.com
@@ -325,6 +337,17 @@
 0.0.0.0 app.waps.cn
 0.0.0.0 openapi.guanjia.qq.com
 0.0.0.0 discuz.gtimg.cn
+0.0.0.0 youxiaoad.com
+0.0.0.0 adimg.qxlsjw.com
+0.0.0.0 ad.netowl.jp
+0.0.0.0 ads.stickyadstv.com
+0.0.0.0 ads.adaptv.advertising.com
+0.0.0.0 pixel.mathtag.com
+0.0.0.0 pixel.sitescout.com
+0.0.0.0 c.domob.cn
+0.0.0.0 scc.domob.cn
+0.0.0.0 u.ads8.com
+0.0.0.0 46sg.com
 #FILE: ifeng.txt : 凤凰网广告
 0.0.0.0 api.iapps.ifeng.com
 0.0.0.0 api.newad.ifeng.com
@@ -627,6 +650,7 @@
 0.0.0.0 ct.niu.xunlei.com
 0.0.0.0 mou.niu.xunlei.com
 0.0.0.0 static.m.sjzhushou.com
+0.0.0.0 m.sjzhushou.com
 #FILE: youdao.txt : 有道广告
 0.0.0.0 a.youdao.com
 0.0.0.0 conv.youdao.com
@@ -1258,6 +1282,10 @@
 0.0.0.0 www.cnnic.cn
 0.0.0.0 www.cnnic.net
 0.0.0.0 cnnic.net
+#FILE: others.txt : other hijack
+0.0.0.0 dl.youjia2016.com
+0.0.0.0 youjia2016.com
+0.0.0.0 dl.jianshunrui.com
 #endModule: hijack
 #Module: baidu_location_report : baidu_location_report 百度全家桶定位 API
 #FILE: baidu_location_report.txt : 百度定位 API
@@ -1650,6 +1678,7 @@
 0.0.0.0 union.dbba.cn
 0.0.0.0 update.avlyun.sec.miui.com
 0.0.0.0 www.adview.cn
+0.0.0.0 report.adview.cn
 0.0.0.0 yun.rili.cn
 0.0.0.0 zhwnlapi.etouch.cn
 0.0.0.0 v2.fm.n.duokanbox.com
@@ -1682,6 +1711,7 @@
 0.0.0.0 activeqq.3g.qq.com
 0.0.0.0 masdk.3g.qq.com
 0.0.0.0 mini.cpc.sogou.com
+0.0.0.0 cpc.sogou.com
 0.0.0.0 adfuture.cn
 0.0.0.0 bigdata.adfuture.cn
 0.0.0.0 folder.adfuture.cn
@@ -1859,7 +1889,6 @@
 0.0.0.0 palmnews.sina.cn
 0.0.0.0 adimg.mobile.sina.cn
 0.0.0.0 wbapp.mobile.sina.cn
-0.0.0.0 simg.sinajs.cn
 0.0.0.0 rs.sinajs.cn
 0.0.0.0 sina.yinstar.org
 0.0.0.0 slog.sina.cn
