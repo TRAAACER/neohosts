@@ -24,7 +24,6 @@ oascentral.sina.com
 palmnews.sina.cn
 adimg.mobile.sina.cn
 wbapp.mobile.sina.cn
-simg.sinajs.cn
 rs.sinajs.cn
 sina.yinstar.org
 slog.sina.cn

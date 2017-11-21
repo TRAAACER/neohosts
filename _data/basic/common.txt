@@ -167,6 +167,13 @@ adserver.xpanama.net
 nop.xpanama.net
 d5nxst8fruw4z.cloudfront.net
 d36eyd5j1kt1m6.cloudfront.net
+d1grtyyel8f1mh.cloudfront.net
+ad.turn.com
+match.adsrvr.org
+track.eyeviewads.com
+pixel.tapad.com
+pixel.adsafeprotected.com
+p.adsymptotic.com
 # Anzhi
 fd.anzhi.com
 pv.anzhi.com
@@ -183,16 +190,28 @@ fds.api.moji.com
 stat.moji.com
 v1.log.moji.com
 cdn2.moji002.com
-# Others
+# Sohu
+adnet.sohu.com
+# advertising.com
+pub.pxl.ace.advertising.com
+pixel.advertising.com
+fw.adsafeprotected.com
+adserver-us.adtech.advertising.com
+# moatads
+geo.moatads.com
+px.moatads.com
+# UDN
 ad1.udn.com
 ad2.udn.com
 ad3.udn.com
 ad4.udn.com
+# Yam
 ad2.yam.com
 admd.yam.com
 ads.yam.com
 analytics.yam.com
 yam.adsbro.com
+# Others
 liveupdate.mac.sandai.net
 ss.missyouxi.com
 ad.zuimeitianqi.com
@@ -210,7 +229,6 @@ b.epinv.com
 stats.chinaz.com
 c1.adform.net
 cas.pxl.ace.advertising.com
-match.adsrvr.org
 c1.popads.net
 serve.popads.net
 cdn.adsk2.co
@@ -299,8 +317,7 @@ js5515.guangzizai.com
 js651.dupinpu.com
 js658.ltcprtc.com
 js6882.gdskywings.com
-js7022.gdskywings.com
-js7022.panzuoLuo.com
+js7022.panzuoluo.com
 ib.adnxs.co
 adsco.re
 sdksitter.m.sjzhushou.com
@@ -311,3 +328,14 @@ ads.wapx.cn
 app.waps.cn
 openapi.guanjia.qq.com
 discuz.gtimg.cn
+youxiaoad.com
+adimg.qxlsjw.com
+ad.netowl.jp
+ads.stickyadstv.com
+ads.adaptv.advertising.com
+pixel.mathtag.com
+pixel.sitescout.com
+c.domob.cn
+scc.domob.cn
+u.ads8.com
+46sg.com
