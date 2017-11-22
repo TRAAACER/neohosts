@@ -191,7 +191,10 @@
 0.0.0.0 track.eyeviewads.com
 0.0.0.0 pixel.tapad.com
 0.0.0.0 pixel.adsafeprotected.com
+0.0.0.0 dt.adsafeprotected.com
+0.0.0.0 fw.adsafeprotected.com
 0.0.0.0 p.adsymptotic.com
+0.0.0.0 ads-west-colo.adsymptotic.com
 0.0.0.0 fd.anzhi.com
 0.0.0.0 pv.anzhi.com
 0.0.0.0 click.jebe.renren.com
@@ -208,7 +211,6 @@
 0.0.0.0 adnet.sohu.com
 0.0.0.0 pub.pxl.ace.advertising.com
 0.0.0.0 pixel.advertising.com
-0.0.0.0 fw.adsafeprotected.com
 0.0.0.0 adserver-us.adtech.advertising.com
 0.0.0.0 geo.moatads.com
 0.0.0.0 px.moatads.com
@@ -348,6 +350,12 @@
 0.0.0.0 scc.domob.cn
 0.0.0.0 u.ads8.com
 0.0.0.0 46sg.com
+0.0.0.0 x.cnxad.com
+0.0.0.0 um2.eqads.com
+0.0.0.0 ads.pubmatic.com
+0.0.0.0 cdn.taboolasyndication.com
+0.0.0.0 ads.979799777.com
+0.0.0.0 c.betrad.com
 #FILE: ifeng.txt : 凤凰网广告
 0.0.0.0 api.iapps.ifeng.com
 0.0.0.0 api.newad.ifeng.com
