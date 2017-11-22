@@ -84,6 +84,7 @@ Authored and maintained by [neoFelhz](https://github.com/neoFelhz) with `Neko De
 + [Allow netease](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/prise_netease)
 + [Allow Baidu track](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/track_me)
 + [Allow MI ADs](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/real_mi_fans)
++ [Surge config](https://raw.githubusercontent.com/pigfromChina/neohosts/gh-pages/surge)
 
 ### Generate dnsmasq.conf, surge.conf, hosts.rsc HOW-TO
 
