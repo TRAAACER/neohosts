@@ -9,7 +9,7 @@ for f in $ALL_FILES ;do
   ruby ../hostsgen.rb -b `cat ../_build/data_temp/$f` -o ../_build/data_temp/$f -q
   if [ $f == full ] ;then
     printf "\033[40;46mChecking ${f} config...\033[0m "
-    ruby ../hostsgen.rb check -o ../_build/data_temp/$f -q -Wall
+    ruby ../hostsgen.rb check -o ../_build/data_temp/$f -q -Wno_domain -Wdup -Wdual_dot
   fi
   printf "\033[32m`cat ../_build/data_temp/$f|wc -l` Lines generated\033[0m\n"
 done
