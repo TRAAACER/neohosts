@@ -1,0 +1,16 @@
+[Host]
+
+# Copyright (c) 2014-2017, neko-dev.
+# https://github.com/pigfromChina/neohosts
+# Last updated: ...
+
+# Hosts License
+
+# Modified Hosts Start
+
+# Localhost (DO NOT REMOVE) Start
+localhost = 127.0.0.1
+localhost = ::1
+ip6-localhost = ::1
+ip6-loopback = ::1
+# Localhost (DO NOT REMOVE) End

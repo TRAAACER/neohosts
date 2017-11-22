@@ -4,6 +4,8 @@ rvm:
 dist: trusty
 script:
   - chmod +x ./_build/deploy.sh
+  - chmod +x ./_build/surge_build.sh
   - chmod +x ./_build/build.sh
   - cd _build&&./build.sh
+  - ./surge_build.sh
   - ./deploy.sh 2&> /dev/null

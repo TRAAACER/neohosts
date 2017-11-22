@@ -25,10 +25,7 @@ HEAD_FILENAME = ENV['HOSTSGEN_HEAD'] || "head.txt"
 OUTPUT_EVAL = ENV['HOSTSGEN_EVAL'] || "@loc + ' ' + @host"
 
 if ARGV.include? "-Wall" then
-  LINT_NODOMAIN = true
-  LINT_DUP = true
-  LINT_DUAL_DOT = true
-  LINT_LOOKUP = true
+  LINT_NODOMAIN = LINT_DUP = LINT_DUAL_DOT = LINT_LOOKUP = true
 else
   LINT_NODOMAIN = ARGV.include? "-Wno_domain"
   LINT_DUP = ARGV.include? "-Wdup"
@@ -38,6 +35,8 @@ end
 
 # valid hostname may contain ASCII char A-Z, a-z, 0-9 and '.', '-'.
 HOSTNAME_VALID_CHARS = ENV['HOSTSGEN_VALID_CHARS'] || "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890-."
+
+DOMAINS = ["com", "org", "net", "io", "me", "jp", "cn", "sh", "co", "cc", "mobi", "cz", "lu", "la", "hk", "au", "th", "kr", "how", "top", "re", "biz"]
 
 # main function
 def start(args)
@@ -428,7 +427,7 @@ end
 def lint(logs)
   require 'ipaddr'
   seen_hostname = []
-  seen_location = []
+  line = []
   logs.each_with_index do |l, i|
     hostname_not_valid = false
     puts "[LINT] WARN: log #" + i.to_s + " may not have a valid IP Address (" + l.loc + ")" if !(IPAddr.new(l.loc) rescue false)
@@ -438,10 +437,33 @@ def lint(logs)
     puts "[LINT] WARN: log #" + i.to_s + " may not have a valid hostname (invalid char '" + cha + "')" if hostname_not_valid
 
     #DUAL_DOT
-    puts "[LINT} WARN: dual dot at line " + i.to_s + ": " + l.host if l.host.include? ".."
+    if LINT_DUAL_DOT then
+      puts "[LINT] WARN: dual dot at line " + i.to_s + ": " + l.host if l.host.include? ".."
+    end
     #NODOMAIN
+    if LINT_NODOMAIN then
+      if l.host.include? '.' then
+        domain = (l.host.split '.')[-1]
+        puts "[LINT} WARN: maybe wrong domain at line: " + i.to_s + " :" + domain if not DOMAINS.include? domain
+      else
+        puts "[LINT] WARN: no dot at line " + i.to_s
+      end
+    end
     #DUP
+    if LINT_DUP then
+      if seen_hostname.include? l.host then
+        idx = seen_hostname.index l.host
+        puts "[LINT] WARN: dup log at line " + i.to_s + " dup with line " + line[idx].to_s + " " + seen_hostname[idx]
+      else
+        seen_hostname << l.host
+        line << i
+      end
+    end
     #LOOKUP
+    if LINT_LOOKUP then
+      system "nslookup " + l.host + ">/dev/null"
+      puts "[LINT] NSLookup Exited with " + $?.exitstatus.to_s + " at log " + l.host + " L" + i.to_s if $?.exitstatus != 0 
+    end
   end
 end
 
