@@ -173,7 +173,10 @@ match.adsrvr.org
 track.eyeviewads.com
 pixel.tapad.com
 pixel.adsafeprotected.com
+dt.adsafeprotected.com
+fw.adsafeprotected.com
 p.adsymptotic.com
+ads-west-colo.adsymptotic.com
 # Anzhi
 fd.anzhi.com
 pv.anzhi.com
@@ -195,7 +198,6 @@ adnet.sohu.com
 # advertising.com
 pub.pxl.ace.advertising.com
 pixel.advertising.com
-fw.adsafeprotected.com
 adserver-us.adtech.advertising.com
 # moatads
 geo.moatads.com
@@ -339,3 +341,9 @@ c.domob.cn
 scc.domob.cn
 u.ads8.com
 46sg.com
+x.cnxad.com
+um2.eqads.com
+ads.pubmatic.com
+cdn.taboolasyndication.com
+ads.979799777.com
+c.betrad.com
