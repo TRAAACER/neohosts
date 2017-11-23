@@ -122,7 +122,6 @@ fw.qq.com
 gu.qlogo.cn
 hm.l.qq.com
 httpring.qq.com
-i.gtimg.cn
 if.mingxing.qq.com
 imc.l.qq.com
 img1.gtimg.com
@@ -154,8 +153,6 @@ py2.qlogo.cn
 q.i.gdt.qq.com
 qqadapt.qpic.cn
 qss-client.qq.com
-qzs.qq.com
-qzs.qq.com
 rh.qq.com
 rich.qq.com
 rs1.qq.com
